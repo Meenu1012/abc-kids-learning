@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 30px 15px;
+  text-align: center;
+  background: #fff3cd;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 10px;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #555;
+}
+
+/* HOME */
+
+.homeCards {
+  max-width: 850px;
+  margin: 35px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.menuCard {
+  border: none;
+  border-radius: 25px;
+  padding: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #aaa;
+  transition: 0.2s;
+}
+
+.menuCard:hover {
+  transform: scale(1.04);
+}
+
+.menuCard span {
+  font-size: 65px;
+}
+
+.menuCard h2 {
+  font-size: 27px;
+  margin: 10px;
+}
+
+.menuCard p {
+  font-size: 18px;
+}
+
+.abcCard {
+  background: #d8d2ff;
+}
+
+.numberCard {
+  background: #c8f7c5;
+}
+
+.colorCard {
+  background: #ffd1dc;
+}
+
+.quizMenuCard {
+  background: #ffe082;
+}
+
+/* HOME BUTTON */
+
+.homeButton {
+  border: none;
+  border-radius: 15px;
+  padding: 12px 22px;
+  background: #607d8b;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.homeButton:hover {
+  background: #455a64;
+}
+
+/* ABC CARD */
+
+.card,
+.numberCard,
+.colorCard,
+.quizCard,
+.resultCard {
+  width: 350px;
+  max-width: 95%;
+  margin: 30px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 5px 20px #aaa;
+}
+
+.letter {
+  font-size: 110px;
+  font-weight: bold;
+  color: #6c63ff;
+}
+
+.smallLetter {
+  font-size: 60px;
+  font-weight: bold;
+  color: #ff7043;
+}
+
+.emoji {
+  font-size: 100px;
+}
+
+.card h2 {
+  font-size: 28px;
+}
+
+/* NUMBER */
+
+.bigNumber {
+  font-size: 120px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.numberEmoji {
+  font-size: 90px;
+}
+
+/* COLORS */
+
+.colorEmoji {
+  font-size: 130px;
+}
+
+.colorCard h2 {
+  font-size: 35px;
+}
+
+/* BUTTONS */
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  border: none;
+  border-radius: 15px;
+  padding: 15px 25px;
+  background: #6c63ff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: #5148d8;
+}
+
+/* SPEAK */
+
+.speakButton {
+  border: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  background: #ff9800;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.speakButton:hover {
+  background: #f57c00;
+}
+
+/* PROGRESS */
+
+.progress {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* QUIZ */
+
+.quizQuestion {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.quizEmoji {
+  font-size: 110px;
+}
+
+.quizCard h2 {
+  font-size: 30px;
+}
+
+.quizOptions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.quizOptions button {
+  width: 80px;
+  height: 70px;
+  border: none;
+  border-radius: 15px;
+  background: #6c63ff;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quizOptions button:hover {
+  background: #5148d8;
+  transform: scale(1.05);
+}
+
+.message {
+  min-height: 30px;
+  font-size: 23px;
+}
+
+.score {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+/* RESULT */
+
+.trophy {
+  font-size: 100px;
+}
+
+.finalScore {
+  font-size: 60px;
+  font-weight: bold;
+  color: #6c63ff;
+}
+
+.resultCard p {
+  font-size: 24px;
+}
+
+/* FOOTER */
+
+.footerText {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #555;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .homeCards {
+    grid-template-columns: 1fr;
+  }
+
+  .letter {
+    font-size: 90px;
+  }
+
+  .emoji {
+    font-size: 80px;
+  }
+
+  .bigNumber {
+    font-size: 90px;
+  }
+
+  .quizEmoji {
+    font-size: 80px;
+  }
+}
